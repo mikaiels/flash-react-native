@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Button, View, Text, StyleSheet,  SafeAreaView, Alert, ImageBackground, ScrollView } from 'react-native';
+import { Button, View, Text, StyleSheet,  SafeAreaView, Alert, ImageBackground, ScrollView, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CardView from 'react-native-cardview';
+
 
 
 
@@ -17,6 +18,10 @@ function HomeScreen({ navigation }) {
           cardMaxElevation={5}
           cornerRadius={5}
           style={styles4.cardViewStyle}>
+
+
+              <Image style={{ width: 50, height: 50 }}
+        source={require('./FLASH.png')} />
                  <Text style={{ textAlign: "center" }}> LIVE ATTENDANCE </Text>
           <Text onPress={() => navigation.navigate('APRIL')} style={styles.cardView_InsideText}> 07:30 </Text>
           <Text  style={{ textAlign: "center" }}> Monday, 5 Apr 2021 </Text>
